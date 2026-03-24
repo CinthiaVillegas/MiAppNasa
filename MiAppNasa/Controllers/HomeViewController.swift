@@ -20,12 +20,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        initialConnection()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupLoading()
+        initialConnection()
     }
     func setupUI() {
         NotificationCenter.default.addObserver(self, selector: #selector(networkChanged), name: .networkStatusChanged, object: nil)
@@ -99,25 +99,36 @@ class HomeViewController: UIViewController {
     }
     
     func fetchApodData() {
-        
+        guard Network.shared.isOnline else {
+            hideLoading()
+            showNetworkAlertView(title: "Espera", msg: "No tienes internet")
+            return
+        }
+
         let api = ApiNetwork()
-        Task {
+        Task { @MainActor in
             do {
                 apodData = try await api.getInfoOfDay()
                 self.imgOfDay.getImageFromURL(urlToShow: apodData?.url ?? "")
                 self.lblTitleImage.text = apodData?.title ?? ""
-    
+                
+            } catch let error as URLError {
+                switch error.code {
+                case .notConnectedToInternet:
+                    showNetworkAlertView(title: "Espera", msg: "No tienes internet")
+                default:
+                  
+                    showNetworkAlertView(title: "Error", msg: "No se cargo la info")
+                }
+                
             } catch {
-                apodData = nil
+                showNetworkAlertView(title: "Error", msg: "Ocurrio un problema")
             }
             hideLoading()
         }
     }
 
     @IBAction func onClickedReload(_ sender: Any) {
-        setupLoading()
         fetchApodData()
     }
-    
-
 }
