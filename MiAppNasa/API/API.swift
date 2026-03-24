@@ -12,10 +12,20 @@ class ApiNetwork {
     let url: String = "https://api.nasa.gov/planetary/apod?api_key="
     
     func getInfoOfDay() async throws -> Apod {
-        let urlRequest = URL(string: "\(url)\(tokenId)&thumbs=true&count=1")!
+        guard let urlRequest = URL(string: "\(url)\(tokenId)&thumbs=true&count=1") else {
+            throw URLError(.badURL)
+        }
         
-        let (data, _) = try await URLSession.shared.data(from: urlRequest)
+        let (data, response) = try await URLSession.shared.data(from: urlRequest)
         
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw URLError(.badServerResponse)
+        }
+        
+        guard (200...299).contains(httpResponse.statusCode) else {
+            throw URLError(.badServerResponse)
+        }
+       
         let info = try JSONDecoder().decode([Apod].self, from: data)
         
         guard let dataApod = info.first else {
