@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7E6D7614-0A2F-4723-8B1F-6DB22A18C8DB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CA3E8E3-13A5-4E7F-A7CB-C49C327E81BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiAppNasa/Views/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "fetchApodData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4CA3E8E3-13A5-4E7F-A7CB-C49C327E81BF - 447611ea3545e11d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in MiAppNasa.HomeViewController.fetchApodData() -&gt; ()"
+                  moduleName = "MiAppNasa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cinthia/Documents/iOS/MiAppNasa/MiAppNasa/Views/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "4CA3E8E3-13A5-4E7F-A7CB-C49C327E81BF - 4745975aeb163a9b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) await resume partial function for closure #1 @Sendable () async -&gt; () in MiAppNasa.HomeViewController.fetchApodData() -&gt; ()"
+                  moduleName = "MiAppNasa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cinthia/Documents/iOS/MiAppNasa/MiAppNasa/Views/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  uuid = "4CA3E8E3-13A5-4E7F-A7CB-C49C327E81BF - a025ec295b095b47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MiAppNasa.HomeViewController.fetchApodData() -&gt; ()"
+                  moduleName = "MiAppNasa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cinthia/Documents/iOS/MiAppNasa/MiAppNasa/Views/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3FD30E3D-6E9D-4E0E-A335-194C147A324F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiAppNasa/Views/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "fetchApodData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3FD30E3D-6E9D-4E0E-A335-194C147A324F - 65c866fc5043a18e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MiAppNasa.HomeViewController.fetchApodData() -&gt; ()"
+                  moduleName = "MiAppNasa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cinthia/Documents/iOS/MiAppNasa/MiAppNasa/Views/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "1603">
+               </Location>
+               <Location
+                  uuid = "3FD30E3D-6E9D-4E0E-A335-194C147A324F - a025ec295b095b8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MiAppNasa.HomeViewController.fetchApodData() -&gt; ()"
+                  moduleName = "MiAppNasa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cinthia/Documents/iOS/MiAppNasa/MiAppNasa/Views/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "99">
+               </Location>
+               <Location
+                  uuid = "3FD30E3D-6E9D-4E0E-A335-194C147A324F - a025ec295b095b8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in MiAppNasa.HomeViewController.fetchApodData() -&gt; ()"
+                  moduleName = "MiAppNasa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cinthia/Documents/iOS/MiAppNasa/MiAppNasa/Views/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "181">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

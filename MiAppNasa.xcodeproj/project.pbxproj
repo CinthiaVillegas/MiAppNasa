@@ -8,18 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		DE62AEE22F71E42C0025D13F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AEE12F71E42C0025D13F /* AppDelegate.swift */; };
-		DE62AEE62F71E42C0025D13F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AEE52F71E42C0025D13F /* ViewController.swift */; };
 		DE62AEEB2F71E42E0025D13F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE62AEEA2F71E42E0025D13F /* Assets.xcassets */; };
 		DE62AEEE2F71E42E0025D13F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE62AEEC2F71E42E0025D13F /* LaunchScreen.storyboard */; };
+		DE62AEFC2F71E6B20025D13F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AEFA2F71E6B20025D13F /* HomeViewController.swift */; };
+		DE62AEFD2F71E6B20025D13F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE62AEFB2F71E6B20025D13F /* HomeViewController.xib */; };
+		DE62AEFF2F71E8CC0025D13F /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AEFE2F71E8CC0025D13F /* Apod.swift */; };
+		DE62AF012F71E9540025D13F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AF002F71E9540025D13F /* API.swift */; };
+		DE62AF042F71EA1F0025D13F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE62AF032F71EA1F0025D13F /* Kingfisher */; };
+		DE62AF072F71EA4F0025D13F /* UIImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AF062F71EA4F0025D13F /* UIImage+Kingfisher.swift */; };
+		DE62AF0D2F71EF360025D13F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AF0B2F71EF360025D13F /* AlertViewController.swift */; };
+		DE62AF0E2F71EF360025D13F /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE62AF0C2F71EF360025D13F /* AlertViewController.xib */; };
+		DE62AF102F71F1600025D13F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AF0F2F71F1600025D13F /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE62AEDE2F71E42C0025D13F /* MiAppNasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiAppNasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE62AEE12F71E42C0025D13F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE62AEE52F71E42C0025D13F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE62AEEA2F71E42E0025D13F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE62AEED2F71E42E0025D13F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE62AEEF2F71E42E0025D13F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE62AEFA2F71E6B20025D13F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE62AEFB2F71E6B20025D13F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		DE62AEFE2F71E8CC0025D13F /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		DE62AF002F71E9540025D13F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DE62AF062F71EA4F0025D13F /* UIImage+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		DE62AF0B2F71EF360025D13F /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		DE62AF0C2F71EF360025D13F /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
+		DE62AF0F2F71F1600025D13F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE62AF042F71EA1F0025D13F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,13 +68,76 @@
 		DE62AEE02F71E42C0025D13F /* MiAppNasa */ = {
 			isa = PBXGroup;
 			children = (
-				DE62AEE12F71E42C0025D13F /* AppDelegate.swift */,
-				DE62AEE52F71E42C0025D13F /* ViewController.swift */,
+				DE62AF082F71EE820025D13F /* Components */,
+				DE62AF052F71EA370025D13F /* Utils */,
+				DE62AEF92F71E6710025D13F /* Library */,
+				DE62AEF82F71E66A0025D13F /* API */,
+				DE62AEF72F71E6600025D13F /* Models */,
+				DE62AEF62F71E6590025D13F /* Views */,
+				DE62AEF52F71E64E0025D13F /* Controllers */,
 				DE62AEEA2F71E42E0025D13F /* Assets.xcassets */,
 				DE62AEEC2F71E42E0025D13F /* LaunchScreen.storyboard */,
 				DE62AEEF2F71E42E0025D13F /* Info.plist */,
 			);
 			path = MiAppNasa;
+			sourceTree = "<group>";
+		};
+		DE62AEF52F71E64E0025D13F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AEFA2F71E6B20025D13F /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE62AEF62F71E6590025D13F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AEFB2F71E6B20025D13F /* HomeViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE62AEF72F71E6600025D13F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AEFE2F71E8CC0025D13F /* Apod.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE62AEF82F71E66A0025D13F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AF002F71E9540025D13F /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DE62AEF92F71E6710025D13F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AEE12F71E42C0025D13F /* AppDelegate.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DE62AF052F71EA370025D13F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AF062F71EA4F0025D13F /* UIImage+Kingfisher.swift */,
+				DE62AF0F2F71F1600025D13F /* Network.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE62AF082F71EE820025D13F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE62AF0B2F71EF360025D13F /* AlertViewController.swift */,
+				DE62AF0C2F71EF360025D13F /* AlertViewController.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +156,9 @@
 			dependencies = (
 			);
 			name = MiAppNasa;
+			packageProductDependencies = (
+				DE62AF032F71EA1F0025D13F /* Kingfisher */,
+			);
 			productName = MiAppNasa;
 			productReference = DE62AEDE2F71E42C0025D13F /* MiAppNasa.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +187,9 @@
 				Base,
 			);
 			mainGroup = DE62AED52F71E42C0025D13F;
+			packageReferences = (
+				DE62AF022F71EA1F0025D13F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = DE62AEDF2F71E42C0025D13F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +206,8 @@
 			files = (
 				DE62AEEE2F71E42E0025D13F /* LaunchScreen.storyboard in Resources */,
 				DE62AEEB2F71E42E0025D13F /* Assets.xcassets in Resources */,
+				DE62AEFD2F71E6B20025D13F /* HomeViewController.xib in Resources */,
+				DE62AF0E2F71EF360025D13F /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE62AEE62F71E42C0025D13F /* ViewController.swift in Sources */,
+				DE62AEFF2F71E8CC0025D13F /* Apod.swift in Sources */,
+				DE62AF0D2F71EF360025D13F /* AlertViewController.swift in Sources */,
 				DE62AEE22F71E42C0025D13F /* AppDelegate.swift in Sources */,
+				DE62AF072F71EA4F0025D13F /* UIImage+Kingfisher.swift in Sources */,
+				DE62AF012F71E9540025D13F /* API.swift in Sources */,
+				DE62AF102F71F1600025D13F /* Network.swift in Sources */,
+				DE62AEFC2F71E6B20025D13F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +363,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiAppNasa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,12 +391,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiAppNasa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE62AF022F71EA1F0025D13F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE62AF032F71EA1F0025D13F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE62AF022F71EA1F0025D13F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE62AED62F71E42C0025D13F /* Project object */;
 }
