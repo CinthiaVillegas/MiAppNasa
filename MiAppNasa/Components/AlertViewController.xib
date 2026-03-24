@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,28 +19,28 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="569" height="336"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-0I-lmP">
-                    <rect key="frame" x="4" y="63" width="561" height="235"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-0I-lmP">
+                    <rect key="frame" x="4" y="89" width="385" height="725"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQK-fP-nJi">
-                            <rect key="frame" x="0.0" y="0.0" width="561" height="20.333333333333332"/>
+                            <rect key="frame" x="172" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugy-RT-HFZ">
-                            <rect key="frame" x="0.0" y="20.333333333333329" width="561" height="20.333333333333329"/>
+                            <rect key="frame" x="172" y="40.333333333333343" width="41.333333333333343" height="20.333333333333329"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwO-rJ-V8t">
-                            <rect key="frame" x="0.0" y="40.666666666666671" width="561" height="194.33333333333331"/>
+                            <rect key="frame" x="141.33333333333334" y="80.666666666666686" width="102.33333333333334" height="644.33333333333326"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Reintentar"/>
                             <connections>
                                 <action selector="onClickedRetry:" destination="-1" eventType="touchUpInside" id="MNX-Z4-XBe"/>
                             </connections>
@@ -52,7 +53,7 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cZV-0I-lmP" secondAttribute="trailing" constant="4" id="LPC-3p-dul"/>
                 <constraint firstItem="cZV-0I-lmP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="Ldj-Ub-TUa"/>
-                <constraint firstItem="cZV-0I-lmP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="mv9-zo-C6b"/>
+                <constraint firstItem="cZV-0I-lmP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="mv9-zo-C6b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cZV-0I-lmP" secondAttribute="bottom" constant="4" id="wrr-Bp-Bi9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

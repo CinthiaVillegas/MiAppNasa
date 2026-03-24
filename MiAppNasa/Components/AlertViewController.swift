@@ -17,28 +17,17 @@ class AlertViewController: UIViewController {
     
     public var onRetry: (() -> Void)?
     
-    public var textFrom : String = ""
-    public var msgFrom : String = ""
+    public var textFrom : String?
+    public var msgFrom : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         setupUI()
     }
-
+    
     func setupUI() {
-        if textFrom != "", msgFrom != ""{
-            lblTitleAlert.text = textFrom
-            lblMessageAlert.text = msgFrom
-        }
-        lblTitleAlert.text = ""
-        lblMessageAlert.text = ""
-       
-        
+        lblTitleAlert.text = textFrom
+        lblMessageAlert.text = msgFrom
     }
 
     @IBAction func onClickedRetry(_ sender: Any) {

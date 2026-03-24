@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        initialConnection()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -54,7 +55,7 @@ class HomeViewController: UIViewController {
             self?.navigationController?.popViewController(animated: true)
             self?.retryConnection()
            }
-        self.navigationController?.present(vc, animated: true)
+        self.present(vc, animated: true)
     }
     
     @objc private func networkChanged() {
